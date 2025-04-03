@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YES(杨二帅)</title>
-    <!-- 引入Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <!-- 引入Google Fonts，确保字体一致 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Noto Serif SC', serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background-image: url('/workspaces/YES.io/YES.io/images/imu_to_npu.jpg'); /* 添加背景图片 */
-            background-size: cover; /* 图片覆盖整个背景 */
-            background-position: center; /* 图片居中 */
-            background-repeat: no-repeat; /* 不重复 */
+            background-image: url('background.jpg'); /* 替换为实际背景图片路径 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .container {
             width: 80%;
             margin: 0 auto;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9); /* 半透明白色背景，防止内容被图片遮挡 */
+            background-color: rgba(255, 255, 255, 0.9);
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         header {
@@ -29,20 +29,25 @@
             padding: 20px;
             background-color: #e0e0e0;
         }
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
         header h1 {
             margin: 0;
             color: #333;
-            font-family: 'Ma Shan Zheng', cursive; /* 可爱的标题字体 */
             font-size: 2.5em;
         }
         nav {
             padding: 10px 0;
             border-bottom: 1px solid #ccc;
+            text-align: center;
         }
         nav a {
             margin: 0 15px;
             text-decoration: none;
             color: #0066cc;
+            font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
@@ -55,7 +60,7 @@
             border-bottom: 2px solid #0066cc;
             padding-bottom: 5px;
         }
-        p {
+        p, ul {
             margin: 10px 0;
         }
         ul {
@@ -76,6 +81,7 @@
 <body>
     <div class="container">
         <header>
+            <img src="/workspaces/YES.io/YES.io/images/imu_to_npu.jpg" alt="页眉图片">
             <h1>Yang Ershuai(杨二帅)</h1>
         </header>
 
@@ -89,13 +95,15 @@
 
         <section id="about">
             <h2>个人简介</h2>
-            <p>杨二帅，本科毕业于内蒙古大学电子信息工程学院(今年6月份),9月份将进入西北工业大学自动化学院攻读硕士研究生,研究方向为计算机视觉与机器学习。</p>
+            <p>杨二帅，本科毕业于内蒙古大学电子信息工程学院(2025年6月)，9月份将进入西北工业大学自动化学院攻读硕士研究生，研究方向为计算机视觉与机器学习。</p>
         </section>
 
         <section id="research">
             <h2>研究方向</h2>
             <ul>
                 <li>遥感图像处理</li>
+                <li>计算机视觉</li>
+                <li>深度学习应用</li>
             </ul>
         </section>
 
@@ -106,7 +114,7 @@
         </section>
 
         <footer>
-            <p>© 2025 YES</p> <!-- 修正此处的语法错误，缺少结束标签 -->
+            <p>© 2025 杨二帅的个人主页</p>
         </footer>
     </div>
 </body>
