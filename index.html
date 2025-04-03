@@ -3,104 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>个人主页</title>
+    <title>个人主页 - 示例</title>
     <style>
-        /* 页面基础样式 */
         body {
             font-family: Arial, sans-serif;
-            background-image: url('/workspaces/YES.io/YES.io/images/imu_to_npu.jpg'); /* 更换为你的图片路径 */
-            background-size: cover; /* 背景图片覆盖整个页面 */
-            background-position: center; /* 背景图片居中 */
             margin: 0;
             padding: 0;
-            color: #333;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         header {
-            background-color: rgba(76, 175, 80, 0.7); /* 半透明绿色背景 */
-            color: white;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
+            background-color: #e0e0e0;
         }
         header h1 {
             margin: 0;
-        }
-        /* 导航栏样式 */
-        nav {
-            text-align: center;
-            background-color: rgba(51, 51, 51, 0.8); /* 半透明深灰色 */
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 10px;
-            border-radius: 5px;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
-        /* 主体内容 */
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin: 20px;
-        }
-        .profile {
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.8); /* 半透明白色背景 */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .profile img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid #4CAF50;
-        }
-        .profile h2 {
-            margin-top: 10px;
-            font-size: 24px;
-            color: #4CAF50;
-        }
-        .profile p {
-            font-size: 18px;
-            color: #555;
-        }
-        .social-links {
-            margin-top: 20px;
-        }
-        .social-links a {
-            color: #4CAF50;
-            font-size: 20px;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .social-links a:hover {
             color: #333;
         }
+        nav {
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px 0;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 5px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
         footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
             text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 10px;
+            background-color: #e0e0e0;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>个人主页</h1>
+            <p>示例姓名</p>
+        </header>
 
-<header>
-    <h1>欢迎来到我的个人主页！</h1>
-</header>
+        <nav>
+            <a href="#home">首页</a>
+            <a href="#about">个人简介</a>
+            <a href="#research">研究方向</a>
+            <a href="#publications">出版物</a>
+            <a href="#contact">联系方式</a>
+        </nav>
 
-<nav>
-    <a href="#">首页</a>
-    <a href="#">关于我</a>
-    <a href="#">
+        <section id="home">
+            <h2>欢迎</h2>
+            <p>欢迎访问我的个人主页！这里记录了我的学术研究、出版物以及联系方式。</p>
+        </section>
+
+        <section id="about">
+            <h2>个人简介</h2>
+            <p>示例姓名，博士，毕业于某大学自动化学院，研究方向为计算机视觉与机器学习。目前在某研究所从事相关研究工作。</p>
+        </section>
+
+        <section id="research">
+            <h2>研究方向</h2>
+            <ul>
+                <li>计算机视觉</li>
+                <li>少样本学习</li>
+                <li>图像分割</li>
+            </ul>
+        </section>
+
+        <section id="publications">
+            <h2>出版物</h2>
+            <ul>
+                <li>论文1: 示例标题, IEEE Transactions, 2023</li>
+                <li>论文2: 示例标题, CCF-A类会议, 2022</li>
+                <li>论文3: 示例标题, 高被引论文, 2021</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>联系方式</h2>
+            <p>邮箱: example@email.com</p>
+            <p>地址: 中国某省某市某大学</p>
+        </section>
+
+        <footer>
+            <p>© 2025 示例姓名。保留所有权利。</p>
+        </footer>
+    </div>
+</body>
+</html>
