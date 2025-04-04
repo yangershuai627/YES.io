@@ -7,6 +7,11 @@
     <!-- 引入Google Fonts，确保字体一致 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
         body {
             font-family: 'Noto Serif SC', serif;
             margin: 0;
@@ -24,10 +29,11 @@
             text-align: center;
             padding: 80px 20px;
             background-image: url('./images/NWPU.jpg');
-            background-size: cover;
+            background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
             background-color: #e0e0e0;
+            height: 100vh;
         }
         header img {
             max-width: 100%;
