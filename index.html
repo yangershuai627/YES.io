@@ -42,20 +42,6 @@
             flex-direction: column; /* 垂直排列 */
         }
 
-        /* 固定背景图，防止随内容移动 */
-        header::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('./images/background.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
         header img {
             max-width: 100%;
             height: auto;
