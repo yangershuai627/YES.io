@@ -33,7 +33,7 @@
         header {
             position: relative;
             width: 100%;
-            padding-top: 21.58%; /* 保持16:9比例 */
+            padding-top: 10%; /* 调整这个值使其上移 */
             background-image: url('./images/background.png');
             background-size: cover;
             background-position: center;
@@ -44,6 +44,7 @@
             color: white;
             text-align: center; /* 增强文本内容的居中效果 */
             flex-direction: column; /* 垂直排列 */
+            transform: translateY(-200px); /* 上移200像素 */
         }
 
         header img {
@@ -60,24 +61,12 @@
             margin-bottom: 10px; /* 调整标题间距 */
         }
 
-        header h2 {
+        header h2, header h3, header h4 {
             margin: 0;
             font-size: 1.5em;
+            color: #fffdfd; /* 确保第二行字体颜色为白色 */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
             margin-bottom: 10px; /* 调整标题间距 */
-        }
-
-        header h3 {
-            margin: 0;
-            font-size: 1.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-            margin-bottom: 10px; /* 调整标题间距 */
-        }
-
-        header h4 {
-            margin: 0;
-            font-size: 1.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
 
         section {
