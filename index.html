@@ -1,81 +1,111 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN"> <!-- 网页语言为中文 -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YES(杨二帅)</title>
-    <!-- 引入Google Fonts，确保字体一致 -->
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8，支持中文 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 适配移动端设备 -->
+    <title>YES(杨二帅)</title> <!-- 网页标题 -->
+
+    <!-- 引入 Google Fonts 中的 Noto Serif SC 中文衬线字体 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700&display=swap" rel="stylesheet">
+
     <style>
+        /* 清除默认边距和高度设置 */
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
         }
+
+        /* 设置页面字体和基本样式 */
         body {
-            font-family: 'Noto Serif SC', serif;
+            font-family: 'Noto Serif SC', serif; /* 使用引入的字体 */
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            overflow-x: hidden; /* 防止横向滚动条 */
+            line-height: 1.6; /* 行高 */
+            overflow-x: hidden; /* 防止横向滚动条出现 */
         }
+
+        /* 页面主要内容容器 */
         .container {
             width: 100%;
             margin: 0 auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 轻微阴影效果 */
         }
+
+        /* 页眉部分，包含背景图 */
         header {
             text-align: center;
-            padding: 80px 20px;
-            width: 100%; /* 设置header宽度为100% */
-            background-image: url('./images/background.png');
-            background-size: 100% auto; /* 设置背景图片宽度占满，且高度保持原大小 */
-            background-position: center;
-            background-repeat: no-repeat;
+            /* padding: 80px 20px; */
+            width: 100%; /* 确保header宽度占满页面 */
+            background-image: url('./images/background.png'); /* 背景图片路径 */
+            background-size: 100% auto; /* 背景图宽度填满，保留原始高度 */
+            background-position: center; /* 背景图居中 */
+            background-repeat: no-repeat; /* 不重复背景图 */
         }
+
+        /* 若header内有图片元素，可自动适应宽度 */
         header img {
             max-width: 100%;
             height: auto;
         }
+
+        /* header中的主标题样式 */
         header h1 {
             margin: 0;
             color: #333;
             font-size: 2.5em;
         }
+
+        /* 导航栏样式 */
         nav {
             padding: 10px 0;
             border-bottom: 1px solid #ccc;
             text-align: center;
         }
+
+        /* 导航链接样式 */
         nav a {
             margin: 0 15px;
             text-decoration: none;
             color: #0066cc;
             font-weight: bold;
         }
+
+        /* 鼠标悬停时显示下划线 */
         nav a:hover {
             text-decoration: underline;
         }
+
+        /* 每个内容块（section）的内边距 */
         section {
             padding: 20px 0;
         }
+
+        /* section 标题样式 */
         h2 {
             color: #333;
             border-bottom: 2px solid #0066cc;
             padding-bottom: 5px;
         }
+
+        /* 段落与无序列表的外边距 */
         p, ul {
             margin: 10px 0;
         }
+
+        /* 移除列表前的小圆点和内边距 */
         ul {
             list-style-type: none;
             padding: 0;
         }
+
+        /* 列表项的上下间距 */
         ul li {
             margin: 10px 0;
         }
+
+        /* 页脚样式 */
         footer {
             text-align: center;
             padding: 10px;
@@ -84,12 +114,17 @@
         }
     </style>
 </head>
+
 <body>
+    <!-- 主容器开始 -->
     <div class="container">
+
+        <!-- 页面顶部区域，含背景图和标题 -->
         <header>
             <h1>Yang Ershuai(杨二帅)</h1>
         </header>
 
+        <!-- 顶部导航菜单 -->
         <nav>
             <a href="#home">首页</a>
             <a href="#about">个人简介</a>
@@ -97,11 +132,13 @@
             <a href="#contact">联系方式</a>
         </nav>
 
+        <!-- 个人简介区域 -->
         <section id="about">
             <h2>个人简介</h2>
             <p>杨二帅，本科毕业于内蒙古大学电子信息工程学院(2025年6月)，9月份将进入西北工业大学自动化学院攻读硕士研究生，研究方向为计算机视觉与机器学习。</p>
         </section>
 
+        <!-- 研究方向区域 -->
         <section id="research">
             <h2>研究方向</h2>
             <ul>
@@ -111,15 +148,19 @@
             </ul>
         </section>
 
+        <!-- 联系方式区域 -->
         <section id="contact">
             <h2>联系方式</h2>
             <p>邮箱: yangershuai0627@gmail.com</p>
             <p>地址: 中国内蒙古自治区呼和浩特市内蒙古大学</p>
         </section>
 
+        <!-- 页脚区域 -->
         <footer>
             <p>© 2025 杨二帅的个人主页</p>
         </footer>
+
     </div>
+    <!-- 主容器结束 -->
 </body>
 </html>
