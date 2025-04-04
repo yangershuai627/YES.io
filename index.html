@@ -39,10 +39,11 @@
             background-position: center;
             background-repeat: no-repeat;
             display: flex;
-            justify-content: center;
-            align-items: flex-start; /* 从顶端开始 */
+            justify-content: center; /* 主轴居中（垂直方向） */
+            align-items: center; /* 交叉轴居中（水平方向） */
             color: white;
-            text-align: center; /* 使标题水平居中 */
+            text-align: center; /* 增强文本内容的居中效果 */
+            flex-direction: column; /* 垂直排列 */
         }
 
         header img {
@@ -56,28 +57,27 @@
             font-size: 4.2em;
             line-height: 1.2;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* 给文字加点阴影，增强可读性 */
-            transform: translateY(-270px);
+            margin-bottom: 10px; /* 调整标题间距 */
         }
 
         header h2 {
             margin: 0;
             font-size: 1.5em;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-            transform: translateY(-240px);
+            margin-bottom: 10px; /* 调整标题间距 */
         }
 
         header h3 {
             margin: 0;
             font-size: 1.5em;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-            transform: translateY(-220px);
+            margin-bottom: 10px; /* 调整标题间距 */
         }
 
         header h4 {
             margin: 0;
             font-size: 1.5em;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-            transform: translateY(-200px);
         }
 
         section {
@@ -149,7 +149,6 @@
         <footer>
             <p>© 2025 杨二帅的个人主页</p>
         </footer>
-
     </div>
 
 </body>
