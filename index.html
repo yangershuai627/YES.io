@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN"> <!-- 网页语言为中文 -->
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8，支持中文 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 适配移动端设备 -->
-    <title>YES(杨二帅)</title> <!-- 网页标题 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YES(杨二帅)</title>
 
     <!-- 引入 Google Fonts 中的 Noto Serif SC 中文衬线字体 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700&display=swap" rel="stylesheet">
@@ -33,17 +33,17 @@
         header {
             position: relative;
             width: 100%;
-            padding-top: 21.58%; /* 9 ÷ 16 = 0.5625，保持16:9比例 */
+            padding-top: 21.58%; /* 保持16:9比例 */
             background-image: url('./images/background.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            display:flex;
+            display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: center; /* 垂直居中 */
             color: white;
+            text-align: center; /* 使标题水平居中 */
         }
-
 
         header img {
             max-width: 100%;
@@ -52,11 +52,11 @@
 
         header h1 {
             margin: 0;
-            color: #333;
+            color: #fffdfd;
             font-size: 2.5em;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* 给文字加点阴影，增强可读性 */
         }
-
-        /* 这里原本有 nav 样式，已移除 */
 
         section {
             padding: 20px 0;
@@ -89,17 +89,13 @@
         }
     </style>
 </head>
-
 <body>
-    <!-- 主容器开始 -->
-    <div class="container">
 
+    <div class="container">
         <!-- 页面顶部区域，含背景图和标题 -->
         <header>
             <h1>Yang Ershuai(杨二帅)</h1>
         </header>
-
-        <!-- 已删除 nav -->
 
         <!-- 个人简介区域 -->
         <section id="about">
@@ -130,6 +126,6 @@
         </footer>
 
     </div>
-    <!-- 主容器结束 -->
+
 </body>
 </html>
